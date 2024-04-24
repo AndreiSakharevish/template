@@ -5,14 +5,15 @@
   background-blend-mode: overlay;
 }
 
-.header__begine {
+.info {
   display: flex;
   justify-content: space-between;
   align-items: center;
+ }
+.info:not(:last-child){
   margin-bottom: 120px;
 }
-
-.header__logo {
+.info__logo {
   width: 68px;
   height: 68px;
   object-fit: cover;
@@ -37,26 +38,26 @@
 } */
 
 /* ----------------------------- */
-.header__phone {
+.info__phone {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 3px;
 }
 
-.header__number {
+.info__number {
   font-size: 23px;
   display: block;
   position: relative;
   text-align: center;
 }
 
-.header__span {
+.info__span {
   display: block;
   font-size: 16px;
 }
 
-.header__span:after {
+.info__span:after {
   content: "";
   display: block;
   background-color: rgba(255, 255, 255, 0.5);
@@ -102,24 +103,24 @@
     padding-bottom: 70px;
   }
 
-  .header__begine {
+  .info {
     margin-bottom: 70px;
   }
 
-  .header__logo {
+  .info__logo {
     width: 60px;
     height: 60px;
   }
 
-  .header__phone {
+  .info__phone {
     font-size: 21px;
   }
 
-  .header__number {
+  .info__number {
     font-size: 21px;
   }
 
-  .header__link {
+  .info__link {
     font-size: 13px;
   }
 
@@ -160,16 +161,16 @@
     padding-bottom: 65px;
   }
 
-  .header__begine {
+  .info {
     margin-bottom: 65px;
   }
 
-  .header__logo {
+  .info__logo {
     width: 30px;
     height: 30px;
   }
 
-  .header__link:after {
+  .info__link:after {
     content: "";
     display: block;
     background: url('../img/Vector-phone.svg') no-repeat;
@@ -177,8 +178,8 @@
     height: 24px;
   }
 
-  .header__number,
-  .header__span {
+  .info__number,
+  .info__span {
     display: none;
   }
 

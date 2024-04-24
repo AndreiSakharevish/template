@@ -25,7 +25,7 @@
 
 .form__label {
   display: block;
-}
+  }
 
 .form__label:not(:last-child) {
   margin-bottom: 21px;
@@ -33,10 +33,11 @@
 
 .form__input {
   background-color: transparent;
-  border: 1.38px solid #fff;
+  border: 1.38px solid var(--white-color-text);
   border-radius: 50px;
   padding: 9px 25px;
   width: 100%;
+  color: var(--white-color-text);
 }
 
 .form {
