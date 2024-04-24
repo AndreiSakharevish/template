@@ -16,6 +16,8 @@ body {
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
   font-size: 22px;
+  font-weight: 400;
+  color: var(--white-color-text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
