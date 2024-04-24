@@ -9,8 +9,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
- }
-.info:not(:last-child){
+  margin-bottom: 120px;
+}
+.header__info{
   margin-bottom: 120px;
 }
 .info__logo {
@@ -140,7 +141,7 @@
 }
 
 /* ------------------------------------- */
-@media (max-width: 500px) {
+@media (max-width: 660px) {
   .header__content {
     max-width: 500px;
   }

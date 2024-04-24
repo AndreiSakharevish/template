@@ -82,9 +82,9 @@ iframe {
   transform: scale(0);
 }
 
-section,
+
 footer {
-  padding: 50px 0;
+  padding: 45px 0;
 }
 
 /* .wrapper {
