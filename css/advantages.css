@@ -3,7 +3,7 @@
 }
 
 .advantages {
-  padding-top: 60px;
+  padding-top: 70px;
   padding-bottom: 70px;
   color: var(--dark-color-text);
   background: var(--bg-color);
@@ -23,6 +23,7 @@
 
 .advantages__subtitle {
   font-weight: 500;
+  font-size: 22px;
   margin-bottom: 35px;
 }
 
@@ -44,12 +45,13 @@
 }
 
 .description {
-  max-width: 900px;
+  max-width: 934px;
   margin: 0 auto;
   counter-reset: item;
   display: flex;
   justify-content: space-between;
   gap: 50px;
+  
 }
 
 .description__text {
@@ -68,7 +70,7 @@
   border-radius: 50%;
   background-color: var(--lightblue-color);
   position: relative;
-  margin: 0 auto 16px;
+  margin: 9px auto 16px;
 }
 
 .description__span::before {
@@ -80,7 +82,7 @@
   line-height: 1;
   color: var(--white-color-text);
   position: absolute;
-  top: 50%;
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -119,11 +121,13 @@
   .description__text {
     font-size: 18px;
     flex: 0 1 180px;
+    
   }
 
   .description__span {
     width: 104px;
     height: 104px;
+    margin-bottom: 26px;
   }
 
   .description__span::before {
@@ -170,9 +174,17 @@
 
   .advantages__subtitle {
     font-size: 16px;
-    margin-bottom: 26px;
+    margin-bottom: 33px;
   }
-
+  .advantages__subtitle::before,
+  .advantages__subtitle::after {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 2px;
+    background: var(--dark-color-text);
+    margin: 0px 23px -3px 23px;
+  }
   .advantages__text {
     font-size: 12px;
   }
@@ -216,7 +228,7 @@
     left: 50%;
     transform: translateX(-50%);
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.40625;
   }
 
@@ -286,13 +298,13 @@
     background-image: url("../img/arrow-left.svg");
     background-color: var(--white-color-text);
     box-shadow: 4px 4px 25px 0 rgba(0, 0, 0, 0.05);
-    left: 0;
+    left: 16px;
   }
 
   .carousel::after {
     background-image: url("../img/arrow-right.svg");
     background-color: rgba(75, 77, 98, 0.72);
     box-shadow: 4px 4px 25px 0 rgba(0, 210, 248, 0.05);
-    right: 0px;
+    right: 16px;
   }
 }

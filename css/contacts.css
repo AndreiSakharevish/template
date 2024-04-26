@@ -84,6 +84,7 @@
 
   .form__fieldset {
     max-width: 379px;
+    margin: 0 auto 49px;
   }
 
   .form__label {
@@ -91,9 +92,9 @@
   }
 
   .form__label:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 13px;
   }
-
+ 
   .form {
     margin-bottom: 30px;
   }
@@ -116,7 +117,7 @@
 
   .contacts__title {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
   }
 
   .contacts__text {
@@ -136,13 +137,15 @@
   .form__label:not(:last-child) {
     margin-bottom: 15px;
   }
-  
+  .form__input{
+    padding: 0px 18px;
+  }
   .form__input::placeholder {
     font-size: 14px;
   }
 .form__button{
   font-size: 16px;
-  padding: 10px 26px;
+  padding: 11px 31px;
 }
   .contacts__downtext {
     font-weight: 400;
