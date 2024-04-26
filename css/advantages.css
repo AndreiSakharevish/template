@@ -1,3 +1,7 @@
+.carousel {
+  display: none;
+}
+
 .advantages {
   padding-top: 60px;
   padding-bottom: 70px;
@@ -173,51 +177,122 @@
     font-size: 12px;
   }
 
+  /* ============================================================ */
   .description {
-    position: relative;
+    display: none;
   }
 
-  .description__text {
-    font-size: 18px;
-    flex: 0 1 166px;
-  }
-
-  .description__text:not(:first-child) {
-    position: fixed;
-    transform: scale(0);
-  }
-
-  .description:before,
-  .description:after {
-    content: "";
+  .carousel {
     display: block;
+    position: relative;
+    padding-top: 104px;
+    padding-bottom: 78px;
+    scrollbar-color: transparent transparent;
+  }
+
+  .carousel__viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+
+  .carousel__slide {
+    position: relative;
+    flex: 0 0 100%;
+    text-align: center;
+    counter-increment: item;
+  }
+
+  .carousel__span {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.40625;
+  }
+
+  /* ---------число-круг */
+  .carousel__slide:before {
+    content: counter(item);
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 2.1;
+    color: var(--white-color-text);
+    position: absolute;
+    top: 52px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 104px;
+    height: 104px;
+    background-color: var(--lightblue-color);
+    border-radius: 50%;
+  }
+
+  .carousel__snapper {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+  }
+
+  .carousel::before,
+  .carousel::after,
+  .carousel__prev,
+  .carousel__next {
+    position: absolute;
+    bottom: 72px;
+    margin-top: 19px;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 0;
+    outline: 0;
+  }
+
+  .carousel::before,
+  .carousel__prev {
+    left: -1rem;
+  }
+
+  .carousel::after,
+  .carousel__next {
+    right: -1rem;
+  }
+
+  .carousel::before,
+  .carousel::after {
+    content: '';
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center center;
     width: 38px;
     height: 38px;
-    border-radius: 50%;
-    position: absolute;
-    top: 72px;
+    pointer-events: none;
   }
 
-  .description:before {
-    background: url("../img/arrow-left.svg") center /auto no-repeat;
+  .carousel::before {
+    background-image: url("../img/arrow-left.svg");
     background-color: var(--white-color-text);
     box-shadow: 4px 4px 25px 0 rgba(0, 0, 0, 0.05);
     left: 0;
   }
 
-  .description:after {
-    background: url("../img/arrow-right.svg") center /auto no-repeat;
+  .carousel::after {
+    background-image: url("../img/arrow-right.svg");
     background-color: rgba(75, 77, 98, 0.72);
     box-shadow: 4px 4px 25px 0 rgba(0, 210, 248, 0.05);
     right: 0px;
-  }
-
-  .description__span {
-    width: 104px;
-    height: 104px;
-  }
-
-  .description__span::before {
-    font-size: 52px;
   }
 }
