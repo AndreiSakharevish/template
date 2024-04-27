@@ -51,7 +51,7 @@
   display: flex;
   justify-content: space-between;
   gap: 50px;
-  
+
 }
 
 .description__text {
@@ -121,7 +121,7 @@
   .description__text {
     font-size: 18px;
     flex: 0 1 180px;
-    
+
   }
 
   .description__span {
@@ -176,6 +176,7 @@
     font-size: 16px;
     margin-bottom: 33px;
   }
+
   .advantages__subtitle::before,
   .advantages__subtitle::after {
     content: "";
@@ -185,6 +186,7 @@
     background: var(--dark-color-text);
     margin: 0px 23px -3px 23px;
   }
+
   .advantages__text {
     font-size: 12px;
   }
