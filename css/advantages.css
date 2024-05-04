@@ -304,9 +304,16 @@
   }
 
   .carousel::after {
-    background-image: url("../img/arrow-right.svg");
-    background-color: rgba(75, 77, 98, 0.72);
-    box-shadow: 4px 4px 25px 0 rgba(0, 210, 248, 0.05);
+    background-image: url("../img/arrow-left.svg");
+    /* background-color: rgba(75, 77, 98, 0.72); */
+    background-color: var(--white-color-text);
+    /* box-shadow: 4px 4px 25px 0 rgba(0, 210, 248, 0.05); */
+    box-shadow: 4px 4px 25px 0 rgba(0, 0, 0, 0.05);
     right: 16px;
+    transform: rotateZ(180deg);
   }
+}
+
+.carousel:checked::after {
+  background-color: #f10707;
 }
