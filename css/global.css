@@ -130,7 +130,7 @@ footer {
 
 .page:after {
   content: "";
-  background: url('../img/stag-office-mockup.png') 50% /cover no-repeat;
+  background: url('../img/stag-office-mockup.png') 0 0 / contain no-repeat;
   display: block;
   position: absolute;
   width: 100%;

@@ -1,6 +1,6 @@
 .header{
   background-color: rgba(47, 50, 75, 0.85);
-  /* position: relative; */
+  position: relative;
   z-index: 1;
 }
 
