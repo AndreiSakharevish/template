@@ -1,12 +1,9 @@
 .page {
-  /* background: url('../img/stag-office-mockup.png') 50% /cover no-repeat; */
-  background-color: rgba(47, 50, 75, 0.85);
-  /* position: relative; */
-  z-index: 1;
-}
-.page {
-  padding-top: 60px;
+  padding-top: 228px;
   padding-bottom: 120px;
+  background: url('../img/stag-office-mockup.png') 50% /cover no-repeat;
+  position: relative;
+  z-index: 1;
 }
 
 .page__content {

@@ -1,12 +1,10 @@
-.header{
-  background-color: rgba(47, 50, 75, 0.85);
-  position: relative;
-  z-index: 1;
-}
-
 .header {
+  background-color: transparent;
   padding-top: 40px;
   padding-bottom: 60px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
 }
 
 .info {
